@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:visibility="gone"
+        android:id="@+id/loading"
+        app:indicatorColor="@color/color_2e9fff"
+        android:indeterminate="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="数据获取失败"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+</FrameLayout>

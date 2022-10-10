@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_pay_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pay_selector" />
+
+    <ImageView
+        android:id="@+id/iv_pay_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp" />
+
+
+    <TextView
+        android:id="@+id/tv_pay_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/color_333333"
+        tools:text="32432" />
+
+</LinearLayout>

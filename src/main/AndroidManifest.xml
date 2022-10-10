@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhibo8.game.sdk">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application>
+
+        <activity
+            android:name=".ZB8ContainerActivity"
+            android:theme="@style/Theme.ActivityDialogStyle" />
+
+        <activity android:name=".pay.wechat.WXPayEntryActivity" />
+
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:targetActivity=".pay.wechat.WXPayEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+    </application>
+    <queries>
+        <package android:name="android.zhibo8" />
+    </queries>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.zhibo8.game.sdk.base.ZB8LoadingLayout
+        android:id="@+id/loading"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pay_detail_selector">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/menu_img_tlogo_nor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:minHeight="48dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/rv_goods_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_pay_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:layout_marginTop="21dp"
+                    android:id="@+id/tv_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_below="@id/rv_pay_mode"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_sure_enable_selector"
+                    android:gravity="center"
+                    android:text="立即支付"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.zhibo8.game.sdk.base.ZB8LoadingLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_close" />
+</LinearLayout>

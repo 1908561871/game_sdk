@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.zhibo8.game.sdk.base.ZB8LoadingLayout
+        android:id="@+id/loading"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pay_detail_selector">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/menu_img_tlogo_nor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="系统检测到直播吧客户端"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_authorize"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/btn_sure_enable_selector"
+                    android:gravity="center"
+                    android:text="直播吧授权登陆"
+                    android:textColor="@color/color_ffffff"
+                    android:textSize="15sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="20dp">
+
+                    <CheckBox
+                        android:id="@+id/cb_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/ic_ck_agreement_selector"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:textSize="13sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tv_privacy"
+                        app:layout_constraintEnd_toStartOf="@id/tv_privacy"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/color_333333"
+                        android:textSize="13dp"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cb_agreement"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="已阅读并同意《直播吧用户协2342432432议》" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </com.zhibo8.game.sdk.base.ZB8LoadingLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_close" />
+
+</LinearLayout>
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_view_agreement_privacy"><![CDATA[已阅读并同意\""<a href="%1$s">直播吧用户协议</a>"\"和\""<a href="%2$s">直播吧隐私政策</a>\""]]></string>
+</resources>
